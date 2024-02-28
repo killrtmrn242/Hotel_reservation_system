@@ -12,28 +12,28 @@ public class Room{
         setRoomRate(RoomRate);
     }
 
-    public int getRoomID(int RoomID){
+    public int getRoomID(){
         return RoomID;
     }
     public void setRoomID(int RoomID){
         this.RoomID = RoomID;
     }
 
-    public String getRoomType(String RoomType){
+    public String getRoomType(){
         return RoomType;
     }
     public void setRoomType(String RoomType){
         this.RoomType = RoomType;
     }
 
-    public int getMaxOccupancy(int MaxOccupancy){
+    public int getMaxOccupancy(){
         return MaxOccupancy;
     }
     public void setMaxOccupancy(int MaxOccupancy){
         this.MaxOccupancy = MaxOccupancy;
     }
 
-    public int getRoomRate(int RoomRate){
+    public int getRoomRate(){
         return RoomRate;
     }
     public void setRoomRate(int RoomRate){

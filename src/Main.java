@@ -1,11 +1,15 @@
+import controllers.RoomController;
 import data.PostgresDB;
 import data.interfaces.IDB;
+import repositories.RoomRepositoryImpl;
+import repositories.interfaces.RoomRepository;
 
-import java.sql.*;
-
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         IDB db = new PostgresDB();
-        db.getConnection();
+        RoomRepository repo = new RoomRepositoryImpl(db);
+        RoomController controller = new RoomController(repo);
+        MyApplication app = new MyApplication(controller);
+        app.start();
     }
 }
